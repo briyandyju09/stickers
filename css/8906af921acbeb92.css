@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Phantom Sans;
+    src: url(../fonts/Regular.woff) format("woff"), url(../fonts/Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Phantom Sans;
+    src: url(../fonts/Bold.woff) format("woff"), url(../fonts/Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.stickers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+.sticker {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+.sticker img {
+    width: 128px;
+    height: 128px;
+    transition: transform 0.25s ease-in-out;
+    filter: grayscale(100%);
+  }
+  
+.sticker img:hover {
+    transform: scale(1.5);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+  }
+  
+.sticker.clicked img {
+    filter: none; 
+  }
+
+
+.css-74f4dx img {
+    filter: grayscale(100%); 
+    transition: transform 0.25s ease-in-out;
+  }
+  
+  .css-74f4dx.clicked img {
+    filter: none;
+  }
+  
+  .css-74f4dx img:hover {
+    transform: scale(1.5);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+  }
+  
